@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+img {
+    position:relative;
+    width:100%;
+    height: auto;
+    z-index:-10;
+}
+
+button {
+    background-color: black;
+    border: solid 2px red;
+    padding: 15px 30px;
+    color: red;
+    outline: 4px solid red;
+    outline: black 4px solid;
+}
+
+.aaa{
+    box-shadow: -5px -5px 200px 100px black inset;
+}
+
+.on-screen{
+    position:absolute;
+    bottom:0;
+    left:45%;
+}
+
+#ch{
+    filter: blur(2px) brightness(50%) contrast(80%) grayscale(10%);
+}
