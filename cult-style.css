@@ -1,8 +1,22 @@
 .logo {
-    display: block;
-    margin:auto;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    margin: auto;
+    width:1000px;
 
 }
+
 body{
     background-color: black;
+}
+
+.fire{
+    position:relative;
+    top:800px;
+    z-index:-2;
+    background-repeat: round;
+    background-image: url("./fire.gif");
+    height: 200px;
 }
