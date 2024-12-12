@@ -1,3 +1,4 @@
-const songs = [];
-songs[0]= new Audio('choir.mp3');
-songs[1]= new Audio('scream.mp3');    
+var img = document.getElementById("ch");
+var if_shake = document.getElementById("myAudio").paused;
+
+while(if_shake != true)

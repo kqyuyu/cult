@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+
+.shop-container {
+    position: relative;
+    display: flex;
+    gap:20px;
+    flex-direction: row;
+    border: solid gray 2px;
+    background-color: grey;
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 2px red;
+    background-color: black;
+}
+
+.shop-element{
+    padding: 10px;
+    width: 200px;
+}
+
+#price {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    bottom:10px;
+    right:20px;
+    padding:5px;
+    margin:5px 0;
+    align-content: center;
+}
+
+button {
+    background-color: black;
+    color: red;
+    border: solid 2px red;
+    padding: 2px;
+}
+
+button:active{
+    background-color: red;
+    color: black;
+}
+
+#popup {
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    width: 200px;
+    height: 100px;
+    border: solid 2px red;
+    background-color: black;
+    padding: 5px 5px;
+    display: inline-flex;
+}
+
+img.item {
+    border:solid 4px black;
+    outline: solid red 2px;
+    margin: 10px;
+    width: 200px;
+    height:200px;
+}

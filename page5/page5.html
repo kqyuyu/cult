@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./children.css">
+</head>
+<body>
+
+    <div class="donate">
+        <p>если хотите больше геймплея, задонатьте автору</p>
+        <button type="button" onclick="openDonate()">Поделиться денюжкой</button>
+    </div>
+
+    <div class="childbox">
+        <div>
+            <img onmouseover="status()" onmouseout="statusoff()" src="GOAT1.png" alt="child">
+            <div id="over" style="opacity: 0;">
+                <span>Живой</span>
+                <span id="hungry">Голодный</span>
+                <span id="fed" style="display: none;">Сытый</span>
+            </div>
+        </div>
+        <button type="button" onclick="feed()">Покормить</button>
+    </div>
+
+    <div id="donate-box" style="visibility: hidden;">
+        <form>
+            <div>
+                <label for="cardnumber">Номер карты:</label><br>
+                <input class="number" type="text" id="cardnumber" name="cardnumber"><br>
+            </div>
+            <div class="form-element">
+                <div>
+                    <label for="date">Срок карты:</label><br>
+                    <input class="small" type="text" id="date" name="date">
+                </div>
+                <div>
+                    <label for="CVC">CVC:</label><br>
+                    <input class="small cvc" type="text" id="CVC" name="CVC">
+                </div>
+            </div>
+</form>
+        <button class="donatebutton" type="button" onclick="closeDonate()">Поделиться денюжкой</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

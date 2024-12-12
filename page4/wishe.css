@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700&display=swap");
+
+body {
+    font-family: Curier, monospace;
+    color: #161b1e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Позволяет оборачивать элементы */
+    height: 100vh; /* Высота страницы */
+    background-color: black; /* Цвет фона страницы */
+    position: relative; /* Для позиционирования изображения */
+}
+
+.prayers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(sign.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center;
+}
+
+.column {
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+}
+
+.quote-wrapper {
+    width: 400px; /* Ширина круга */
+    height: 400px; /* Высота круга */
+    position: relative;
+    margin: 10px 0;
+    border: solid 20px black; /* Отступ между кругами по вертикали */
+    border-radius: 50%; /* Делаем круг */
+    background-color: red;
+    outline: solid 2px red;
+    box-sizing: border-box;
+    overflow: hidden; /* Обрезаем текст, который выходит за границы круга */
+}
+
+.text {
+    position: absolute; /* Абсолютное позиционирование для текста внутри круга */
+    top: 50%;
+    left: 50%; /* Исходное положение текста в центре круга */
+    transform: translate(-50%, -50%); /* Центрируем текст */
+    color: #ffffff; /* Цвет текста (белый) */
+    transition: opacity 0.5s; /* Плавный переход для непрозрачности текста */
+}
+
+.initial-text {
+    opacity: 1; /* Исходная непрозрачность для начального текста */
+}
+
+.hover-text {
+    opacity: 0; /* Исходная непрозрачность для текста при наведении */
+}
+
+.quote-wrapper:hover .initial-text {
+    opacity: 0; /* Начальный текст исчезает при наведении */
+}
+
+.quote-wrapper:hover .hover-text {
+    opacity: 1; /* Новый текст становится видимым при наведении */
+}
+
+.text p {
+    font-size: 12px; /* � азмер шрифта */
+    line-height: 1.1; /* Высота строки */
+    margin: 0; /* Убираем отступы */
+    text-align: center;
+}
+
+.h1 {
+    text-align: center;
+}
+
+/* Стили для изображения по краям */
+.corner-image {
+    position: absolute;
+    width: 100px; /* Увеличенная ширина изображения */
+    height: 100px; /* Увеличенная высота изображения */
+}
+/* Стили для изображения по краям */
+.gvozdika {
+    width: 100%; /* Увеличенная ширина изображения */
+    height: 500px; /* Увеличенная высота изображения */
+}
+/* Позиционирование изображений в углах */
+.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}

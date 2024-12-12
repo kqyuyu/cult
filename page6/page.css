@@ -1,0 +1,68 @@
+.paskha {   
+    width: auto;
+    height: 450px;;
+    max-width: 100%;
+
+}
+
+.overlay{
+    
+    width: 100vw;
+    height: 450px;
+    background-color: rgb(206, 252, 186);
+    margin-top: -450px;
+    
+}
+
+.proba{
+    position: relative;
+    
+}
+
+span{
+    font-size: large;
+}
+
+p{
+    color:antiquewhite;
+    width: 500px;
+    margin: 20px;
+    text-align: center;
+}
+
+body{
+    background-color: white;
+}
+
+
+.image>img{
+    width: 500px;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #a48a6e;
+    border-radius: 3px;
+    background-color: #a48a6e;
+    width: 45%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.knopka{
+    display: flex;
+    flex-direction:column;
+    width:150px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: blueviolet;
+}
+
+img{
+    display: block;
+    width: 150px;
+}
