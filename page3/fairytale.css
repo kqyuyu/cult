@@ -12,11 +12,19 @@ body {
 }
 
 h1 {
-    color: red; 
-    font-weight: bold; 
-    font-size: 50px; 
-    text-align: center; 
-    margin-top: 20px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    border: 1px red solid;
+    background-color: black;
+    padding: 10px;
 }
 
 .container {
@@ -41,10 +49,11 @@ h1 {
 }
 
 img {
-    width: 100%; 
-    height: 100%; /* Высота изображения на всю высоту контейнера изображения */
-    object-fit: cover; /* Соотношение сторон изображения сохраняется, изображение заполняет контейнер */
-    transition: opacity 0.5s ease; /* Плавный переход для изменения прозрачности */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    filter: grayscale(1) brightness(50%);
 }
 
 .text {
@@ -53,10 +62,11 @@ img {
     left: 0;
     width: 100%; /* Ширина текста на всю ширину контейнера изображения */
     height: 100%; /* Высота текста на всю высоту контейнера изображения */
-    color: white; /* Цвет текста (изменено на белый для лучшей видимости на черном фоне) */
+    color: red; /* Цвет текста (изменено на белый для лучшей видимости на черном фоне) */
     box-sizing: border-box; /* Учет отступов и границ в размерах элемента */
     opacity: 0; /* Изначально текст невидим */
-    transition: opacity 0.5s ease; /* Плавный переход для изменения прозрачности текста */
+    transition: opacity 0.5s ease;
+    text-align: center;
     display: flex; /* Используем flexbox для центрирования текста */
     align-items: center; /* Центрируем текст по вертикали */
     justify-content: center; /* Центрируем текст по горизонтали */
@@ -75,4 +85,5 @@ img {
     width: 100%; /* Ширина слайд-шоу на всю ширину контейнера */
     height: 650px; /* Высота слайд-шоу */
     margin-bottom: 20px; /* Отступ снизу слайд-шоу */
+    position: relative;
 }
